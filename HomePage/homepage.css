@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    color: #f4f4f4;
+    font-family: 'Pacifico', cursive;
+}
+
+nav {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+li a {
+  display: block;
+  color: #101010;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: xx-large;
+}
+
+li a:hover:not(.active) {
+  text-decoration: underline;
+  filter: opacity(.8);
+}
+
+.active {
+  text-decoration: underline;
+}
+
+header{
+    display: flex;
+}
+
+header div{
+    position: relative;
+}
+
+
+header li {
+  float: left;
+}
+
+
+.category{
+    display: inline;
+}
+
+.category img{
+    width: 300px;
+    height: 440px;
+    object-fit: fill;
+}
+
+.category li a{
+    text-align: left;
+}
+
+.column{
+    display: flex;
+    justify-content: space-between;
+    padding: auto;
+}
+
+.column li a{
+    text-align: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer li a{
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    text-justify:newspaper;
+}
+
+#quote{
+    color: #101010;
+    font-size: 80px;
+}
+
+#links{
+    display: inline;
+}
