@@ -180,7 +180,7 @@ textarea {
 
 #form_button {
     font-family: 'Pacifico', cursive;
-    width: 545px;
+    width: 22.5rem;
     margin: auto;
     background: none;
     border: solid 2px #747474;
@@ -205,6 +205,11 @@ textarea {
     margin-bottom: 16px;
     display: flex;
     
+}
+
+.button{
+  display: flex;
+  justify-content: space-between
 }
 
 @media only screen and (max-width: 960px){
@@ -233,7 +238,7 @@ textarea {
   }
 
   #form_button{
-    width: 100%;
+    width: 10.5rem;
   }
 
   .footer{
