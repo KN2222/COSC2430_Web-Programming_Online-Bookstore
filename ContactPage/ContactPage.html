@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ContactPage/ContactPage.css">
+    <title>Book-K</title>
+</head>
+<body>
+    <header>
+        <div>
+            <li><a class="active" href="/HomePage/homepage.html"> <img src="/Material/logo.png" alt="logo image" width="100" height="100"></a></li>
+        </div>
+        <nav>
+            <li><a class="active" href="/HomePage/homepage.html">Home</a></li>
+            <li><a href="/CategoryPage/CategoryPage.html">Novels</a></li>
+            <li><a href="/CategoryPage/CategoryPage.html">Personal Improvement</a></li>
+        </nav>
+    </header>
+
+    <hr>
+
+    <h1>Contact Us</h1>
+
+    <form class="form" action="#" method="post" enctype="multipart/form-data">
+        <div class="subject">
+            <label for="subject"></label>
+            <select placeholder="Subject line" name="subject" id="subject_input" required>
+                <option disabled hidden selected>Contact purpose</option>
+                <option>I want to sell books</option>
+                <option>I want to buy books</option>
+            </select>
+        </div>
+
+        <div class="name">
+            <label for="name"></label>
+            <input type="text" placeholder="My name is" name="name" id="name_input" required>
+        </div>
+
+        <div class="email">
+            <label for="email"></label>
+            <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+        </div>
+
+        <div class="telephone">
+            <label for="telephone"></label>
+            <input type="text" placeholder="My number is" name="telephone" id="telephone_input" required>
+        </div>
+
+        <div class="form-checkbox">
+            How can we contact you? 
+            <br>
+            <input type="checkbox" id="contact1" name="contact1" value="Email">
+            <label for="contact1">By email</label><br>
+            <input type="checkbox" id="contact2" name="contact2" value="Telephone">
+            <label for="contact2">By phone</label><br>
+        </div>
+
+
+        <div class="form-radio">
+            Do you want to receive our weekly newsletter?
+            <div class="radio">
+              <label>
+                <input type="radio" name="radio" checked="checked"/><i class="helper"></i>Yes
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="radio"/><i class="helper"></i>No
+              </label>
+            </div>
+        </div>
+
+        <div class="message">
+            <label for="message"></label>
+            <textarea name="message" placeholder="Note" id="message_input" cols="30" rows="5"></textarea>
+        </div>
+
+        <div class="submit">
+            <input type="submit" value="Send Message" id="form_button" />
+        </div>
+      </form>
+
+    <hr>
+
+    <footer class="footer">
+        <div id="quote">
+            "Books: Food for the Brain.
+        </div>
+
+        <div id="links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy, Terms, Copyright</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </div>
+    </footer>
+    
+</body>
+</html>

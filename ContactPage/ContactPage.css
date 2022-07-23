@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    background-color: #f4f4f4;
+    list-style: none;
+}
+
+nav {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+li a {
+  display: block;
+  color: #101010;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: xx-large;
+  font-family: 'Pacifico', cursive;
+}
+
+li a:hover:not(.active) {
+  text-decoration: underline;
+  filter: opacity(.8);
+}
+
+.active {
+  text-decoration: underline;
+}
+
+header{
+    display: flex;
+}
+
+header div{
+    position: relative;
+}
+
+
+header li {
+  float: left;
+}
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Pacifico', cursive;
+}
+
+.footer li a{
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    text-justify:newspaper;
+}
+
+#quote{
+    color: #101010;
+    font-size: 80px;
+}
+
+#links{
+    display: inline;
+}
+
+h1, .form{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.form{
+    padding: auto;
+    margin: 50px 0;
+    margin: 0 25%;
+}
+
+
+h1{
+    font-weight: bold;
+    font-size:100px;
+    margin: 0;
+}
+
+.email {
+    float: right;
+    width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+    background: none;
+    border: none;
+    border-bottom: solid 2px #747474;
+    color: #747474;
+    font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+    outline: none;
+    padding: 0 0 0.875em 0;
+}
+
+.message {
+    float: none;
+}
+
+.name {
+    float: left;
+    width: 45%;
+}
+
+select {
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.subject {
+    width: 100%;
+}
+
+.telephone {
+    width: 100%;
+}
+
+textarea {
+    line-height: 150%;
+    height: 150px;
+    resize: none;
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+    color: #747474;
+}
+
+:-moz-placeholder { 
+    color: #000;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #000;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #000;
+}
+
+.form-checkbox{
+    display: flex;
+    padding: 0 0 10px 0;
+    justify-content:baseline;
+}
+
+
+#form_button {
+    font-family: 'Pacifico', cursive;
+    width: 545px;
+    margin: auto;
+    background: none;
+    border: solid 2px #747474;
+    color: #000;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: normal;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#form_button:hover {
+    background: #000;
+    color: #ffffff;
+}
+
+.form-radio{
+    margin-bottom: 16px;
+    display: flex;
+    
+}
+
+@media only screen and (max-width: 960px){
+  *{
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  header{
+    display: block;
+  }
+
+  header li {
+    float:none;
+  }
+  
+  h1{
+    font-size: 70px;
+  }
+
+  .form{
+    margin: 50px 10px;
+  }
+  .form-checkbox, .form-radio{
+    display: block;
+  }
+
+  #form_button{
+    width: 100%;
+  }
+
+  .footer{
+    display: block;
+    }
+
+  #quote{
+    font-size: 1.9rem;
+  }
+  
+  header div{
+    position: relative;
+    margin: auto;
+}
+}
